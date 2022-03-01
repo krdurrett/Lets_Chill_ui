@@ -1,0 +1,44 @@
+.feelings-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: aliceblue;
+  font-size: xxx-large;
+  font-weight: bold;
+  height: 65%;
+  width: 100%;
+}
+
+.feelings-form-title {
+  margin: 1em 0 0 0;
+}
+
+.feelings-form-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 75%;
+  width: 5em;
+  margin-left: 0.3em;
+}
+
+button {
+  border: none;
+  font-family: "Amatic SC", cursive;
+  font-weight: bolder;
+  font-size: 25px;
+  border-radius: 15px;
+  background-color: rgba(103, 174, 204, 0.8);
+  cursor: pointer;
+}
+
+button:hover {
+  border: none;
+  font-family: "Amatic SC", cursive;
+  font-weight: bolder;
+  font-size: 30px;
+  border-radius: 15px;
+  color: aliceblue;
+  background-color: rgba(103, 174, 204);
+  cursor: pointer;
+}
