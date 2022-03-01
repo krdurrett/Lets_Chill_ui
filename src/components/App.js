@@ -1,18 +1,28 @@
 import React, { Component } from 'react'
 import { Route, Switch } from 'react-router-dom'
+import Nav from './Nav'
+import ChillLogLink from './ChillLogLink'
 import '../styles/App.css'
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      feelings: []
+      feelings: [],
+      selectedFeeling: {}
     }
   }
 
   render() {
     return (
-      <h1>This is the main page</h1>
+      <section className='App'>
+        <Switch>
+          <Route exact path='/'>
+            <Nav />
+            <ChillLogLink />
+          </Route>
+        </Switch>
+      </section>
     )
   }
 }
