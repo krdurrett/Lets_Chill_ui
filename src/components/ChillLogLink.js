@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const ChillLogLink = () => {
   return (
     <section className='chill-log-link'>
-      <Link to='/chillLog' className='chill-log-title'>Chill Log</Link>
+      <Link to='/chill_log' className='chill-log-title'>Chill Log</Link>
     </section>
   )
 }

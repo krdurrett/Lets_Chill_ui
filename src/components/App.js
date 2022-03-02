@@ -27,7 +27,6 @@ class App extends Component {
           <Route exact path='/'>
             <Nav setSelectedFeeling={this.setSelectedFeeling}/>
             {this.state.selectedFeeling ? <ActionsContainer selectedFeeling={this.state.selectedFeeling}/> : null}
-            <ChillLogLink />
           </Route>
         </Switch>
       </section>
