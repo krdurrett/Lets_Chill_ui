@@ -1,4 +1,4 @@
-.nav-bar {
+.detail-nav-bar {
   margin: 0;
   height: 100%;
   width: 28%;
@@ -14,7 +14,7 @@
   font-family: "Permanent Marker", cursive;
   font-size: xxx-large;
   color: aliceblue;
-  height: 35%;
+  height: 22%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;

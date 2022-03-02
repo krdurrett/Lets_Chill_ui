@@ -1,17 +1,17 @@
 import React, {Component} from 'react'
-import FeelingsForm from './FeelingsForm'
 import ChillLogLink from './ChillLogLink'
-import '../styles/Nav.css'
+import LogForm from './LogForm'
+import '../styles/DetailNav.css'
 import { Link } from 'react-router-dom'
 
-const Nav = ({ setSelectedFeeling }) => {
+const DetailNav = ({ id }) => {
     return (
-      <section className='nav-bar'>
+      <section className='detail-nav-bar'>
         <Link to='/' className='nav-title'>Let's Chill</Link>
-        <FeelingsForm setSelectedFeeling={setSelectedFeeling}/>
+        <LogForm id={id} />
         <ChillLogLink />
       </section>
     )
 }
 
-export default Nav 
+export default DetailNav 
