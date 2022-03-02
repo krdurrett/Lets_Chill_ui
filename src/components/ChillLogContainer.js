@@ -27,7 +27,9 @@ class ChillLogContainer extends Component {
 
   render() {
     return (
-      this.state.log
+      <section className='chill-log-container'>
+        {this.state.log}
+      </section>
     )
   }
 }

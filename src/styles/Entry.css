@@ -1,0 +1,7 @@
+.entry {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(168, 184, 191, 0.8);
+  margin: 1em 0 1em 0;
+  font-size: xx-large;
+}

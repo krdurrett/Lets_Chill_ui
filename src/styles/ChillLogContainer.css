@@ -1,0 +1,9 @@
+.chill-log-container {
+  width: 70%;
+  padding: 5em;
+  overflow-y: scroll;
+}
+
+.chill-log-container::-webkit-scrollbar {
+  display: none;
+}
