@@ -1,11 +1,12 @@
 .chill-log-link {
-  color: aliceblue;
   align-self: flex-end;
-  font-family: "Permanent Marker", cursive;
-  font-size: xx-large;
   width: 22%;
 }
 
 .chill-log-title {
   margin: 0;
+  color: aliceblue;
+  font-size: xxx-large;
+  font-family: "Permanent Marker", cursive;
+  text-decoration: none;
 }
