@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import { getSpecificAction } from '../apiCalls'
 import '../styles/LogForm.css'
 
 class LogForm extends Component {
@@ -10,9 +11,21 @@ class LogForm extends Component {
     }
   }
 
+   componentDidMount = () => {
+    getSpecificAction(parseInt(this.props.id))
+      .then(data => this.setState({ action: data}))
+  }
+
   render() {
     return (
-      <h2>This is the Log Form</h2>
+      <section className='log-form-container'>
+        <p className='log-form-title'>Did this help?</p>
+        <div className='helped-buttons'>
+          <button className='helped-button'>Yes</button>
+          <button className='helped-button'>No</button>
+        </div>
+        <button className='add-to-log-button'>Add This To Your Log!</button>
+      </section>
     )
   }
 }
