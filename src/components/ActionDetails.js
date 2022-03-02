@@ -18,10 +18,12 @@ class ActionDetails extends Component {
   render() {
     return (
       <section className='action-detail-card'>
-        <h2>{this.state.action.action}</h2>
-        <p>{this.state.action.description}</p>
-        <img src={this.state.action.img} alt={`${this.state.action.action} gif`}/>
-        <a href={this.state.action.link} target="_blank" rel="noopener noreferrer">Reference Link</a>
+        <h2 className='action-detail-title'>{this.state.action.action}</h2>
+        <p className='action-detail-description'>{this.state.action.description}</p>
+        <section className='image-and-link'>
+          <img className='action-image' src={this.state.action.img} alt={`${this.state.action.action} gif`}/>
+          <a className='action-link' href={this.state.action.link} target="_blank" rel="noopener noreferrer">Reference Link</a>
+        </section>
       </section>
     )
   }

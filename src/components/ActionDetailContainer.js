@@ -5,7 +5,7 @@ import LogForm from './LogForm'
 
 const ActionDetailContainer = ({ id }) => {
   return (
-    <section>
+    <section className='action-detail-container'>
       <ActionDetails id={id} />
       <LogForm id={id} />
     </section>
