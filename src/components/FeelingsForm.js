@@ -2,11 +2,16 @@ import React, { Component } from 'react'
 import '../styles/FeelingsForm.css'
 
 class FeelingsForm extends Component {
-  constructor() {
-    super()
-    this.state = {
-      feeling: ''
-    }
+  constructor(props) {
+    super(props)
+  }
+
+  handleMouseEnter = event => {
+   this.props.setSelectedFeeling(parseInt(event.target.value))
+  }
+
+  handleMouseLeave = () => {
+    console.log('no longer on a button')
   }
 
   render() {
@@ -14,11 +19,11 @@ class FeelingsForm extends Component {
       <section className='feelings-form'>
         <p className='feelings-form-title'>How are you feeling?</p>
         <div className='feelings-form-buttons'>
-          <button>I'M GONNA DIE!!</button>
-          <button>ALERT</button>
-          <button>Uncomfortable</button>
-          <button>Something's off...</button>
-          <button>Calm</button>
+          <button onMouseEnter={event => this.handleMouseEnter(event)} onMouseLeave={() => this.handleMouseLeave()} value='1'>I'M GONNA DIE!!</button>
+          <button onMouseEnter={event => this.handleMouseEnter(event)} onMouseLeave={() => this.handleMouseLeave()} value='2'>ALERT</button>
+          <button onMouseEnter={event => this.handleMouseEnter(event)} onMouseLeave={() => this.handleMouseLeave()} value='3'>Uncomfortable</button>
+          <button onMouseEnter={event => this.handleMouseEnter(event)} onMouseLeave={() => this.handleMouseLeave()} value='4'>Something's off...</button>
+          <button onMouseEnter={event => this.handleMouseEnter(event)} onMouseLeave={() => this.handleMouseLeave()} value='5'>Calm</button>
         </div>
       </section>
     )
