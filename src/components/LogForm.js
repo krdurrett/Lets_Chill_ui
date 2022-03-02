@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import { getSpecificAction, getSpecificFeeling } from '../apiCalls'
+import { getSpecificAction, getSpecificFeeling, postToLog } from '../apiCalls'
 import '../styles/LogForm.css'
 
 class LogForm extends Component {
@@ -30,6 +30,12 @@ class LogForm extends Component {
     this.setState({ helped: value })
   }
 
+  addToLog = () => {
+    let entry = {date: new Date(Date.now()).toLocaleString().split(',')[0], feeling: this.state.feeling, action: this.state.action, helped: this.state.helped}
+    console.log(entry)
+    postToLog(entry)
+  }
+
   render() {
     return (
       <section className='log-form-container'>
@@ -38,7 +44,7 @@ class LogForm extends Component {
           <button className='helped-button' value='yes' onClick={event => this.handleClick(event)}>Yes</button>
           <button className='helped-button' value='no' onClick={event => this.handleClick(event)}>No</button>
         </div>
-        <button className='add-to-log-button'>Add This To Your Log!</button>
+        {!(this.state.helped === '') && <button className='add-to-log-button' onClick={this.addToLog}>Add This To Your Log!</button>}
       </section>
     )
   }
