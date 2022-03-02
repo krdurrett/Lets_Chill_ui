@@ -22,7 +22,7 @@ class ActionDetails extends Component {
         <p className='action-detail-description'>{this.state.action.description}</p>
         <section className='image-and-link'>
           <img className='action-image' src={this.state.action.img} alt={`${this.state.action.action} gif`}/>
-          <a className='action-link' href={this.state.action.link} target="_blank" rel="noopener noreferrer">Reference Link</a>
+          <a className='action-link' href={this.state.action.reference} target="_blank" rel="noopener noreferrer">Reference Link</a>
         </section>
       </section>
     )

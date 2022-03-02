@@ -2,9 +2,9 @@ import React from 'react'
 import '../styles/Action.css'
 import { Link } from 'react-router-dom'
 
-const Action = ({ id, name }) => {
+const Action = ({ actionId, feelingId, name }) => {
   return (
-    <Link to={`/${id}/action_detail`} id={id} className='action-card'>{name}</Link>
+    <Link to={`/${feelingId}/${actionId}/action_detail`} className='action-card'>{name}</Link>
   )
 }
 

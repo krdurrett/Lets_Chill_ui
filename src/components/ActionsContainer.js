@@ -6,7 +6,8 @@ const ActionsContainer = ({ selectedFeeling }) => {
   const actions = selectedFeeling.actions.map(action => {
     return <Action 
             key={action.id}
-            id={action.id}
+            actionId={action.id}
+            feelingId={selectedFeeling.id}
             name={action.action}
           />
   })

@@ -1,0 +1,31 @@
+.log-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: aliceblue;
+  font-size: xxx-large;
+  font-weight: bold;
+  height: 55%;
+  width: 70%;
+  margin-left: 0.8em;
+}
+
+.log-form-title {
+  margin: 1em 0 1em 0;
+}
+
+.helped-buttons {
+  display: flex;
+  width: 3.8em;
+  justify-content: space-between;
+}
+
+.helped-button {
+  font-size: xx-large;
+  width: 45%;
+}
+
+.add-to-log-button {
+  margin-top: 5em;
+  font-size: xx-large;
+}
