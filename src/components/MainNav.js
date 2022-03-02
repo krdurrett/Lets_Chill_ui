@@ -1,12 +1,12 @@
 import React, {Component} from 'react'
 import FeelingsForm from './FeelingsForm'
 import ChillLogLink from './ChillLogLink'
-import '../styles/Nav.css'
+import '../styles/MainNav.css'
 import { Link } from 'react-router-dom'
 
-const Nav = ({ setSelectedFeeling }) => {
+const MainNav = ({ setSelectedFeeling }) => {
     return (
-      <section className='nav-bar'>
+      <section className='main-nav-bar'>
         <Link to='/' className='nav-title'>Let's Chill</Link>
         <FeelingsForm setSelectedFeeling={setSelectedFeeling}/>
         <ChillLogLink />
@@ -14,4 +14,4 @@ const Nav = ({ setSelectedFeeling }) => {
     )
 }
 
-export default Nav 
+export default MainNav 

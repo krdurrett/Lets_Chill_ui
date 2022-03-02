@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Action = ({ id, name }) => {
   return (
-    <Link to='/action_detail' id={id} className='action-card'>{name}</Link>
+    <Link to={`/${id}/action_detail`} id={id} className='action-card'>{name}</Link>
   )
 }
 
