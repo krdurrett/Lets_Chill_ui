@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { Route, Switch } from 'react-router-dom'
 import MainNav from './MainNav'
 import DetailNav from './DetailNav'
+import Nav from './Nav'
+import ChillLogContainer from './ChillLogContainer'
 import ActionDetailContainer from './ActionDetailContainer'
 import ActionsContainer from './ActionsContainer'
 import { getSpecificFeeling } from '../apiCalls'
@@ -32,6 +34,9 @@ class App extends Component {
           <Route exact path='/:feelingId/:actionId/action_detail' render={({ match }) => {
             return [<DetailNav key={match.params.actionId + 'detail_nav'} actionId={match.params.actionId} feelingId={match.params.feelingId} />, <ActionDetailContainer id={match.params.actionId} key={match.params.actionId + 'action_detail'}/>]
           }} />
+          <Route exact path='/chill_log' render={() => {
+            return [<Nav key='nav' />, <ChillLogContainer key='chill_log' />]
+          }}/>
         </Switch>
       </section>
     )
