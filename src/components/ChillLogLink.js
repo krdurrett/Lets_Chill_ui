@@ -1,10 +1,11 @@
 import React from 'react'
 import '../styles/ChillLogLink.css'
+import { Link } from 'react-router-dom'
 
 const ChillLogLink = () => {
   return (
     <section className='chill-log-link'>
-      <h2 className='chill-log-title'>Chill Log</h2>
+      <Link to='/chillLog' className='chill-log-title'>Chill Log</Link>
     </section>
   )
 }
