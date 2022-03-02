@@ -23,19 +23,23 @@ class App extends Component {
       .then(data => this.setState({ selectedFeeling: data}))
   }
 
+  resetSelectedFeeling = () => {
+    this.setState({ selectedFeeling: ''})
+  }
+
   render() {
     return (
       <section className='App'>
         <Switch>
           <Route exact path='/'>
-            <MainNav setSelectedFeeling={this.setSelectedFeeling}/>
+            <MainNav setSelectedFeeling={this.setSelectedFeeling} resetSelectedFeeling={this.resetSelectedFeeling}/>
             {this.state.selectedFeeling ? <ActionsContainer selectedFeeling={this.state.selectedFeeling}/> : null}
           </Route>
           <Route exact path='/:feelingId/:actionId/action_detail' render={({ match }) => {
-            return [<DetailNav key={match.params.actionId + 'detail_nav'} actionId={match.params.actionId} feelingId={match.params.feelingId} />, <ActionDetailContainer id={match.params.actionId} key={match.params.actionId + 'action_detail'}/>]
+            return [<DetailNav key={match.params.actionId + 'detail_nav'} actionId={match.params.actionId} feelingId={match.params.feelingId} resetSelectedFeeling={this.resetSelectedFeeling} />, <ActionDetailContainer id={match.params.actionId} key={match.params.actionId + 'action_detail'}/>]
           }} />
           <Route exact path='/chill_log' render={() => {
-            return [<Nav key='nav' />, <ChillLogContainer key='chill_log' />]
+            return [<Nav key='nav' resetSelectedFeeling={this.resetSelectedFeeling} />, <ChillLogContainer key='chill_log' />]
           }}/>
         </Switch>
       </section>
