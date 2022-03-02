@@ -30,7 +30,7 @@ class App extends Component {
             {this.state.selectedFeeling ? <ActionsContainer selectedFeeling={this.state.selectedFeeling}/> : null}
           </Route>
           <Route exact path='/:id/action_detail' render={({ match }) => {
-            return [<DetailNav key={match.params.id + 'detail_nav'}/>, <ActionDetailContainer id={match.params.id} key={match.params.id + 'action_detail'}/>]
+            return [<DetailNav key={match.params.id + 'detail_nav'} id={match.params.id}/>, <ActionDetailContainer id={match.params.id} key={match.params.id + 'action_detail'}/>]
           }} />
         </Switch>
       </section>
