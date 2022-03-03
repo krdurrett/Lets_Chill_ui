@@ -6,6 +6,7 @@ import Nav from './Nav'
 import ChillLogContainer from './ChillLogContainer'
 import ActionDetailContainer from './ActionDetailContainer'
 import ActionsContainer from './ActionsContainer'
+import Error404 from './Error404'
 import { getSpecificFeeling } from '../apiCalls'
 import '../styles/App.css'
 
@@ -41,6 +42,10 @@ class App extends Component {
           <Route exact path='/chill_log' render={() => {
             return [<Nav key='nav' resetSelectedFeeling={this.resetSelectedFeeling} />, <ChillLogContainer key='chill_log' />]
           }}/>
+          <Route>
+            <Nav />
+            <Error404 />
+          </Route>
         </Switch>
       </section>
     )
