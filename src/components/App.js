@@ -16,14 +16,14 @@ class App extends Component {
     super();
     this.state = {
       selectedFeeling: '',
-      error: ''
+      error: '',
     }
   }
 
   setSelectedFeeling = id => {
     getSpecificFeeling(id)
-      .then(data => this.setState({ selectedFeeling: data}))
-      .catch(error => this.setState({ error: error.message}))
+      .then(data => this.setState({ selectedFeeling: data }))
+      .catch(error => this.setState({ error: error.message }))
   }
 
   resetSelectedFeeling = () => {
