@@ -10,6 +10,7 @@ describe('Lets Chill landing page user flow', () => {
       .get('button').contains('Something\'s off...')
       .get('button').contains('Calm')
       .get('.chill-log-title').contains('Chill Log')
+      .url().should('include', '/')
   });
 
 });
