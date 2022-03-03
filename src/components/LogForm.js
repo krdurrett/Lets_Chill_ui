@@ -32,8 +32,8 @@ class LogForm extends Component {
 
   addToLog = () => {
     let entry = {date: new Date(Date.now()).toLocaleString().split(',')[0], feeling: this.state.feeling, action: this.state.action, helped: this.state.helped}
-    console.log(entry)
     postToLog(entry)
+      .then(() => this.setState({ helped: ''}))
   }
 
   render() {
