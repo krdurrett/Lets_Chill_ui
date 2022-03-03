@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import '../styles/ChillLogContainer.css'
 import { getLog } from '../apiCalls'
 import Entry from './Entry'
+import Loading from './Loading'
 import ErrorModal from './ErrorModal'
 
 class ChillLogContainer extends Component {
@@ -9,7 +10,8 @@ class ChillLogContainer extends Component {
     super()
     this.state = {
       log: '', 
-      error: ''
+      error: '', 
+      isLoading: true
     }
   }
 
@@ -24,17 +26,25 @@ class ChillLogContainer extends Component {
                 action={entry.action}
                 helped={entry.helped}
             />
-      })}))
-      .catch(error => this.setState({ error: error.message}))
+      }), isLoading: false }))
+      .catch(error => this.setState({ error: error.message, isLoading: false}))
+  }
+
+  determineRender = () => {
+    if (this.state.error) {
+      return <ErrorModal message={this.state.error}/>
+    } else if (this.state.isLoading) {
+      return <Loading />
+    } else {
+      return <section className='chill-log-container'>
+                {this.state.log}
+              </section>
+    }
   }
 
   render() {
-    const errorModal = this.state.error ? <ErrorModal message={this.state.error}/> : null
     return (
-      <section className='chill-log-container'>
-        {this.state.log}
-        {errorModal}
-      </section>
+      this.determineRender()
     )
   }
 }
