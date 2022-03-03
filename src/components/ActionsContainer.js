@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import '../styles/ActionsContainer.css'
 import Action from './Action'
+import PropTypes from 'prop-types'
 
 const ActionsContainer = ({ selectedFeeling }) => {
   const actions = selectedFeeling.actions.map(action => {
@@ -20,3 +21,7 @@ const ActionsContainer = ({ selectedFeeling }) => {
 }
 
 export default ActionsContainer
+
+ActionsContainer.propTypes = {
+  selectedFeeling: PropTypes.object
+}

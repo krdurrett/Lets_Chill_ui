@@ -3,6 +3,7 @@ import ChillLogLink from './ChillLogLink'
 import LogForm from './LogForm'
 import '../styles/DetailNav.css'
 import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
 const DetailNav = ({ actionId, feelingId, resetSelectedFeeling }) => {
     return (
@@ -15,3 +16,9 @@ const DetailNav = ({ actionId, feelingId, resetSelectedFeeling }) => {
 }
 
 export default DetailNav 
+
+DetailNav.propTypes = {
+  actionId: PropTypes.string,
+  feelingId: PropTypes.string,
+  resetSelectedFeeling: PropTypes.func
+}
