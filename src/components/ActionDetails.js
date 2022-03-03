@@ -1,22 +1,26 @@
 import React, { Component } from 'react'
 import { getSpecificAction, getSpecificFeeling } from '../apiCalls'
 import '../styles/ActionDetails.css'
+import ErrorModal from './ErrorModal'
 import PropTypes from 'prop-types'
 
 class ActionDetails extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      action: ''
+      action: '', 
+      error: ''
     }
   }
 
   componentDidMount = () => {
     getSpecificAction(parseInt(this.props.id))
       .then(data => this.setState({ action: data}))
+      .catch(error => this.setState({ error: error.message}))
   }
 
   render() {
+    const errorModal = this.state.error ? <ErrorModal message={this.state.error}/> : null
     return (
       <section className='action-detail-card'>
         <h2 className='action-detail-title'>{this.state.action.action}</h2>
@@ -25,6 +29,7 @@ class ActionDetails extends Component {
           <img className='action-image' src={this.state.action.img} alt={`${this.state.action.action} gif`}/>
           <a className='action-link' href={this.state.action.reference} target="_blank" rel="noopener noreferrer">Reference Link</a>
         </section>
+        {errorModal}
       </section>
     )
   }
