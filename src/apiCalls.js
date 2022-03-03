@@ -6,7 +6,7 @@ export const getAllFeelings = () => {
 }
 
 export const getSpecificFeeling = id => {
-  return fetch(`https://lets-chill-api.herokuapp.com/api/v1/feelings/${id}`)
+  return fetch(`https://lets-chill-api.herokuapp.com/api/v1/feeling/${id}`)
     .then(response => handleResponse(response))
 }
 
