@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import '../styles/FeelingsForm.css'
+import PropTypes from 'prop-types'
 
 class FeelingsForm extends Component {
   constructor(props) {
@@ -31,3 +32,7 @@ class FeelingsForm extends Component {
 }
 
 export default FeelingsForm
+
+FeelingsForm.propTypes = {
+  setSelectedFeeling: PropTypes.func
+}

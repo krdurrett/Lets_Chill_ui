@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { getSpecificAction, getSpecificFeeling } from '../apiCalls'
 import '../styles/ActionDetails.css'
+import PropTypes from 'prop-types'
 
 class ActionDetails extends Component {
   constructor(props) {
@@ -30,3 +31,7 @@ class ActionDetails extends Component {
 }
 
 export default ActionDetails
+
+ActionDetails.propTypes = {
+  id: PropTypes.string
+}

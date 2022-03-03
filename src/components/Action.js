@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/Action.css'
 import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
 const Action = ({ actionId, feelingId, name }) => {
   return (
@@ -9,3 +10,9 @@ const Action = ({ actionId, feelingId, name }) => {
 }
 
 export default Action 
+
+Action.propTypes = {
+  actionId: PropTypes.number,
+  feelingId: PropTypes.number,
+  name: PropTypes.string
+}

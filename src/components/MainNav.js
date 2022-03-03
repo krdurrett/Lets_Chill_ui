@@ -3,6 +3,7 @@ import FeelingsForm from './FeelingsForm'
 import ChillLogLink from './ChillLogLink'
 import '../styles/MainNav.css'
 import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
 const MainNav = ({ setSelectedFeeling, resetSelectedFeeling }) => {
     return (
@@ -15,3 +16,8 @@ const MainNav = ({ setSelectedFeeling, resetSelectedFeeling }) => {
 }
 
 export default MainNav 
+
+MainNav.propTypes = {
+  setSelectedFeeling: PropTypes.func,
+  resetSelectedFeeling: PropTypes.func
+}

@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import { getSpecificAction, getSpecificFeeling, postToLog } from '../apiCalls'
 import '../styles/LogForm.css'
+import PropTypes from 'prop-types'
 
 class LogForm extends Component {
   constructor(props) {
@@ -51,3 +52,8 @@ class LogForm extends Component {
 }
 
 export default LogForm
+
+LogForm.propTypes = {
+  actionId: PropTypes.string,
+  feelingId: PropTypes.string
+}

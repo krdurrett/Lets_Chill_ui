@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/Entry.css'
+import PropTypes from 'prop-types'
 
 const Entry = ({ id, date, action, feeling, helped}) => {
   return (
@@ -13,3 +14,10 @@ const Entry = ({ id, date, action, feeling, helped}) => {
 }
 
 export default Entry
+
+Entry.propTypes = {
+  date: PropTypes.string,
+  action: PropTypes.string,
+  feeling: PropTypes.string,
+  helped: PropTypes.bool
+}
