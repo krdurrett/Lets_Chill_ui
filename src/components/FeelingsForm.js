@@ -16,11 +16,11 @@ class FeelingsForm extends Component {
       <section className='feelings-form'>
         <p className='feelings-form-title'>How are you feeling?</p>
         <div className='feelings-form-buttons'>
-          <button onMouseEnter={event => this.handleMouseEnter(event)} value='1'>I'M GONNA DIE!!</button>
-          <button onMouseEnter={event => this.handleMouseEnter(event)} value='2'>ALERT</button>
-          <button onMouseEnter={event => this.handleMouseEnter(event)} value='3'>Uncomfortable</button>
-          <button onMouseEnter={event => this.handleMouseEnter(event)} value='4'>Something's off...</button>
-          <button onMouseEnter={event => this.handleMouseEnter(event)} value='5'>Calm</button>
+          <button className='feeling-button' onMouseEnter={event => this.handleMouseEnter(event)} value='1'>I'M GONNA DIE!!</button>
+          <button className='feeling-button' onMouseEnter={event => this.handleMouseEnter(event)} value='2'>ALERT</button>
+          <button className='feeling-button' onMouseEnter={event => this.handleMouseEnter(event)} value='3'>Uncomfortable</button>
+          <button className='feeling-button' onMouseEnter={event => this.handleMouseEnter(event)} value='4'>Something's off...</button>
+          <button className='feeling-button' onMouseEnter={event => this.handleMouseEnter(event)} value='5'>Calm</button>
         </div>
       </section>
     )

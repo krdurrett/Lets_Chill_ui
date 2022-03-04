@@ -10,9 +10,7 @@
 }
 
 .feelings-form-title {
-  color: black;
-  text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255),
-    -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
+  margin: 1em 0 0 0;
 }
 
 .feelings-form-buttons {
@@ -24,7 +22,7 @@
   margin-left: 0.3em;
 }
 
-button {
+.feeling-button {
   border: none;
   font-family: "Amatic SC", cursive;
   font-weight: bolder;
@@ -35,7 +33,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.feeling-button:hover {
   border: none;
   font-family: "Amatic SC", cursive;
   font-weight: bolder;
@@ -62,6 +60,9 @@ button:hover {
 
   .feelings-form-title {
     margin: 0;
+    color: black;
+    text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255),
+      -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
   }
 
   .feelings-form-buttons {
@@ -69,7 +70,7 @@ button:hover {
     flex-direction: column;
   }
 
-  button {
+  .feeling-button {
     border: none;
     font-family: "Amatic SC", cursive;
     font-weight: bolder;
@@ -81,7 +82,7 @@ button:hover {
     cursor: pointer;
   }
 
-  button:hover {
+  .feeling-button:hover {
     border: none;
     font-family: "Amatic SC", cursive;
     font-weight: bolder;

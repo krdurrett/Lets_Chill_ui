@@ -21,43 +21,111 @@
 }
 
 .helped-button {
-  font-size: xx-large;
   width: 45%;
+  border: none;
+  font-family: "Amatic SC", cursive;
+  font-weight: bolder;
+  font-size: 25px;
+  border-radius: 15px;
+  height: 2em;
+  background-color: rgba(103, 174, 204, 0.8);
+  cursor: pointer;
+}
+
+.helped-button:hover {
+  border: none;
+  font-family: "Amatic SC", cursive;
+  font-weight: bold;
+  border-radius: 15px;
+  height: 2em;
+  color: aliceblue;
+  background-color: rgba(103, 174, 204);
+  cursor: pointer;
 }
 
 .add-to-log-button {
   margin-top: 5em;
   font-size: xx-large;
+  width: 50%;
+  border: none;
+  font-family: "Amatic SC", cursive;
+  font-weight: bolder;
+  font-size: 25px;
+  border-radius: 15px;
+  height: 2em;
+  background-color: rgba(103, 174, 204, 0.8);
+  cursor: pointer;
+}
+
+.add-to-log-button:hover {
+  margin-top: 5em;
+  font-size: xx-large;
+  width: 50%;
+  border: none;
+  font-family: "Amatic SC", cursive;
+  font-weight: bold;
+  font-size: 25px;
+  border-radius: 15px;
+  height: 2em;
+  color: aliceblue;
+  background-color: rgba(103, 174, 204, 0.8);
+  cursor: pointer;
 }
 
 @media screen and (min-width: 330px) and (max-width: 500px) {
   .log-form-container {
     display: flex;
+    margin: 0;
     flex-direction: column;
     align-items: center;
     color: aliceblue;
-    font-size: xxx-large;
+    font-size: 2.5em;
     font-weight: bold;
-    margin: 0;
+    width: 100%;
   }
 
   .log-form-title {
     margin: 0;
-  }
-
-  .helped-buttons {
-    display: flex;
-    width: 3.8em;
-    justify-content: space-between;
+    color: black;
+    text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255),
+      -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
   }
 
   .helped-button {
-    font-size: xx-large;
     width: 45%;
+    border: none;
+    font-family: "Amatic SC", cursive;
+    font-weight: bold;
+    font-size: x-large;
+    border-radius: 15px;
+    color: black;
+    background-color: rgba(103, 174, 204, 0.8);
+    cursor: pointer;
   }
 
   .add-to-log-button {
-    font-size: xx-large;
-    margin: 0.6em;
+    border: none;
+    font-family: "Amatic SC", cursive;
+    font-weight: bolder;
+    font-size: x-large;
+    border-radius: 15px;
+    margin: 0.5em 0 0.5em 0;
+    width: 8em;
+    color: black;
+    background-color: rgba(103, 174, 204, 0.8);
+    cursor: pointer;
+  }
+
+  .add-to-log-button:hover {
+    border: none;
+    font-family: "Amatic SC", cursive;
+    font-weight: bolder;
+    font-size: x-large;
+    border-radius: 15px;
+    margin: 0.5em 0 0.5em 0;
+    width: 8em;
+    color: aliceblue;
+    background-color: rgba(103, 174, 204, 0.8);
+    cursor: pointer;
   }
 }
