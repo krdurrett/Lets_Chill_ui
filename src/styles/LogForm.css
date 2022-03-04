@@ -145,9 +145,7 @@
   .log-form-title {
     margin: 0;
     font-size: 1.3em;
-    color: black;
-    text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255),
-      -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
+    color: aliceblue;
   }
 
   .helped-buttons {
