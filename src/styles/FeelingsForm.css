@@ -56,4 +56,31 @@ button:hover {
     height: 60%;
     width: 100%;
   }
+
+  .feelings-form-title {
+    margin: 0;
+  }
+
+  button {
+    border: none;
+    font-family: "Amatic SC", cursive;
+    font-weight: bolder;
+    font-size: x-large;
+    border-radius: 15px;
+    height: 1.5em;
+    background-color: rgba(103, 174, 204, 0.8);
+    cursor: pointer;
+  }
+
+  button:hover {
+    border: none;
+    font-family: "Amatic SC", cursive;
+    font-weight: bolder;
+    font-size: x-large;
+    border-radius: 15px;
+    height: 2em;
+    color: aliceblue;
+    background-color: rgba(103, 174, 204);
+    cursor: pointer;
+  }
 }
