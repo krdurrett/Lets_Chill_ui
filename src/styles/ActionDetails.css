@@ -45,3 +45,37 @@
   font-weight: bold;
   text-decoration: underline;
 }
+
+@media screen and (min-width: 330px) and (max-width: 500px) {
+  .action-detail-card {
+    height: 100%;
+    background-color: rgba(168, 184, 191, 0.1);
+  }
+
+  .action-detail-title {
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 0;
+    height: fit-content;
+  }
+
+  .action-detail-description {
+    font-size: x-large;
+    font-weight: bold;
+    height: fit-content;
+    text-align: center;
+  }
+
+  .image-and-link {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: fit-content;
+  }
+
+  .action-link {
+    text-decoration: none;
+    font-size: xx-large;
+    color: black;
+  }
+}
