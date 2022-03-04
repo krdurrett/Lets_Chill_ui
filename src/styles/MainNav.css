@@ -39,12 +39,21 @@
 @media screen and (min-width: 330px) and (max-width: 500px) {
   .main-nav-bar {
     margin: 0;
-    height: 40em;
+    height: 70%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    border: 2px solid blue;
+  }
+
+  .nav-title {
+    margin: 0;
+    color: black;
+    font-size: 3em;
+    font-family: "Permanent Marker", cursive;
+    text-decoration: none;
+    text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255),
+      -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
   }
 }
