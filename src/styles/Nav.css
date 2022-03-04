@@ -36,7 +36,7 @@
     -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
 }
 
-@media screen and (min-width: 330px) and (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .log-nav-bar {
     margin: 0;
     width: 100%;

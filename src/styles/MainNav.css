@@ -36,7 +36,7 @@
     -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
 }
 
-@media screen and (min-width: 330px) and (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .main-nav-bar {
     margin: 0;
     height: 70%;
@@ -61,6 +61,38 @@
     margin: 0;
     font-family: "Permanent Marker", cursive;
     font-size: 3em;
+    color: black;
+    display: flex;
+    text-decoration: none;
+    text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255),
+      -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 1200px) {
+  .main-nav-bar {
+    margin: 0;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-title {
+    margin: 0;
+    color: black;
+    font-size: 4em;
+    font-family: "Permanent Marker", cursive;
+    text-decoration: none;
+    text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255),
+      -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
+  }
+
+  .nav-title:hover {
+    margin: 0;
+    font-family: "Permanent Marker", cursive;
+    font-size: 4em;
     color: black;
     display: flex;
     text-decoration: none;

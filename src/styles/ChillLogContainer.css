@@ -8,7 +8,7 @@
   display: none;
 }
 
-@media screen and (min-width: 330px) and (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .chill-log-container {
     overflow-y: scroll;
     display: flex;

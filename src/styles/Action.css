@@ -23,12 +23,48 @@
   border-radius: 15px;
 }
 
-@media screen and (min-width: 330px) and (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .action-card {
     text-decoration: none;
     text-align: center;
     font-size: xx-large;
     color: black;
+    background-color: rgba(168, 184, 191, 0.8);
+    height: 3em;
+    width: 10em;
+    border-radius: 15px;
+  }
+
+  .action-card:hover {
+    text-decoration: none;
+    text-align: center;
+    font-size: xx-large;
+    color: aliceblue;
+    background-color: rgba(168, 184, 191, 0.8);
+    height: 3em;
+    width: 10em;
+    border: 2px solid black;
+    border-radius: 15px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 1200px) {
+  .action-card {
+    text-decoration: none;
+    text-align: center;
+    font-size: 2em;
+    color: black;
+    background-color: rgba(168, 184, 191, 0.8);
+    height: 3em;
+    width: 10em;
+    border-radius: 15px;
+  }
+
+  .action-card:hover {
+    text-decoration: none;
+    text-align: center;
+    font-size: 2em;
+    color: aliceblue;
     background-color: rgba(168, 184, 191, 0.8);
     height: 3em;
     width: 10em;
