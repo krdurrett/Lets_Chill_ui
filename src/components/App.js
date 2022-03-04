@@ -6,6 +6,8 @@ import Nav from './Nav'
 import ChillLogContainer from './ChillLogContainer'
 import ActionDetailContainer from './ActionDetailContainer'
 import ActionsContainer from './ActionsContainer'
+import Error404 from './Error404'
+import ErrorModal from './ErrorModal'
 import { getSpecificFeeling } from '../apiCalls'
 import '../styles/App.css'
 
@@ -13,14 +15,15 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      feelings: [],
-      selectedFeeling: ''
+      selectedFeeling: '',
+      error: '',
     }
   }
 
   setSelectedFeeling = id => {
     getSpecificFeeling(id)
-      .then(data => this.setState({ selectedFeeling: data}))
+      .then(data => this.setState({ selectedFeeling: data }))
+      .catch(error => this.setState({ error: error.message }))
   }
 
   resetSelectedFeeling = () => {
@@ -28,6 +31,7 @@ class App extends Component {
   }
 
   render() {
+    const errorModal = this.state.error ? <ErrorModal message={this.state.error}/> : null
     return (
       <section className='App'>
         <Switch>
@@ -41,7 +45,12 @@ class App extends Component {
           <Route exact path='/chill_log' render={() => {
             return [<Nav key='nav' resetSelectedFeeling={this.resetSelectedFeeling} />, <ChillLogContainer key='chill_log' />]
           }}/>
+          <Route>
+            <Nav />
+            <Error404 />
+          </Route>
         </Switch>
+        {errorModal}
       </section>
     )
   }

@@ -1,0 +1,17 @@
+.error-404-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(168, 184, 191, 0.8);
+  height: 40%;
+  border-radius: 15px;
+}
+
+.error {
+  font-size: xxx-large;
+}
+
+.message {
+  font-size: xx-large;
+  font-weight: bold;
+}
