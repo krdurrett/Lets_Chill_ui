@@ -1,0 +1,34 @@
+.error-modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-modal-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 40%;
+  border-radius: 50px;
+  background-color: rgba(168, 184, 191, 0.9);
+  text-align: center;
+  padding: 1em;
+  font-size: xx-large;
+}
+
+.error-message {
+  align-items: center;
+  text-align: center;
+  color: #252522;
+  margin: 0;
+}
