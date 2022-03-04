@@ -27,7 +27,6 @@
   font-family: "Permanent Marker", cursive;
   font-size: xxx-large;
   color: black;
-  /* height: 35%; */
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -35,4 +34,16 @@
   text-decoration: none;
   text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255),
     -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
+}
+
+@media screen and (min-width: 330px) and (max-width: 500px) {
+  .main-nav-bar {
+    margin: 0;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

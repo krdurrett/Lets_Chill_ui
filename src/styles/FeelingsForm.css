@@ -44,3 +44,16 @@ button:hover {
   background-color: rgba(103, 174, 204);
   cursor: pointer;
 }
+
+@media screen and (min-width: 330px) and (max-width: 500px) {
+  .feelings-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+    font-size: xxx-large;
+    font-weight: bold;
+    height: 60%;
+    width: 100%;
+  }
+}
