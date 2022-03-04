@@ -22,7 +22,7 @@
   margin-left: 0.3em;
 }
 
-button {
+.feeling-button {
   border: none;
   font-family: "Amatic SC", cursive;
   font-weight: bolder;
@@ -33,7 +33,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.feeling-button:hover {
   border: none;
   font-family: "Amatic SC", cursive;
   font-weight: bolder;
@@ -43,4 +43,104 @@ button:hover {
   color: aliceblue;
   background-color: rgba(103, 174, 204);
   cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .feelings-form {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+    font-size: 2.5em;
+    font-weight: bold;
+    height: 7em;
+    width: 100%;
+  }
+
+  .feelings-form-title {
+    margin: 0;
+    color: black;
+    text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255),
+      -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
+  }
+
+  .feelings-form-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feeling-button {
+    border: none;
+    font-family: "Amatic SC", cursive;
+    font-weight: bolder;
+    font-size: x-large;
+    border-radius: 15px;
+    height: 1.5em;
+    color: black;
+    background-color: rgba(103, 174, 204, 0.8);
+    cursor: pointer;
+  }
+
+  .feeling-button:hover {
+    border: none;
+    font-family: "Amatic SC", cursive;
+    font-weight: bolder;
+    font-size: x-large;
+    border-radius: 15px;
+    height: 1.5em;
+    color: aliceblue;
+    background-color: rgba(103, 174, 204);
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 1200px) {
+  .feelings-form {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+    font-size: 3em;
+    font-weight: bold;
+    height: 7em;
+    width: 100%;
+  }
+
+  .feelings-form-title {
+    margin: 0;
+    color: aliceblue;
+    font-size: 1.1em;
+  }
+
+  .feelings-form-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+  }
+
+  .feeling-button {
+    border: none;
+    font-family: "Amatic SC", cursive;
+    font-weight: bolder;
+    font-size: xx-large;
+    border-radius: 15px;
+    margin: 0.1em;
+    color: black;
+    background-color: rgba(103, 174, 204, 0.8);
+    cursor: pointer;
+  }
+
+  .feeling-button:hover {
+    border: none;
+    font-family: "Amatic SC", cursive;
+    font-weight: bolder;
+    font-size: xx-large;
+    border-radius: 15px;
+    height: 1.5em;
+    color: aliceblue;
+    background-color: rgba(103, 174, 204);
+    cursor: pointer;
+  }
 }

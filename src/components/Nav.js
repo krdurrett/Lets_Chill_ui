@@ -5,8 +5,8 @@ import PropTypes from 'prop-types'
 
 const Nav = ({ resetSelectedFeeling }) => {
     return (
-      <section className='nav-bar'>
-        <Link to='/' className='nav-title' onClick={resetSelectedFeeling}>Let's Chill</Link>
+      <section className='log-nav-bar'>
+        <Link to='/' className='log-nav-title' onClick={resetSelectedFeeling}>Let's Chill</Link>
       </section>
     )
 }

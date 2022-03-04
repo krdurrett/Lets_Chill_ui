@@ -1,4 +1,4 @@
-.nav-bar {
+.log-nav-bar {
   margin: 0;
   height: 100%;
   width: 28%;
@@ -7,4 +7,87 @@
   justify-content: flex-start;
   align-items: flex-start;
   margin-left: 1.5em;
+}
+
+.log-nav-title {
+  margin: 0;
+  font-family: "Permanent Marker", cursive;
+  font-size: xxx-large;
+  color: aliceblue;
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 0.3em;
+  text-decoration: none;
+}
+
+.log-nav-title:hover {
+  margin: 0;
+  font-family: "Permanent Marker", cursive;
+  font-size: xxx-large;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 0.3em;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255),
+    -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 500px) {
+  .log-nav-bar {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 30%;
+  }
+
+  .log-nav-title {
+    margin: 0;
+    font-family: "Permanent Marker", cursive;
+    font-size: 2em;
+    color: aliceblue;
+    text-decoration: none;
+  }
+
+  .log-nav-title:hover {
+    margin: 0;
+    font-family: "Permanent Marker", cursive;
+    font-size: 2em;
+    color: black;
+    text-decoration: none;
+    text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255),
+      -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 1200px) {
+  .log-nav-bar {
+    margin: 0;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+  }
+
+  .log-nav-title {
+    margin: 0;
+    font-family: "Permanent Marker", cursive;
+    font-size: 4em;
+    color: aliceblue;
+    text-decoration: none;
+  }
+
+  .log-nav-title:hover {
+    margin: 0;
+    font-family: "Permanent Marker", cursive;
+    font-size: 2em;
+    color: black;
+    text-decoration: none;
+    text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255),
+      -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
+  }
 }

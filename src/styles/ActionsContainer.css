@@ -11,3 +11,24 @@
 .actions-container::-webkit-scrollbar {
   display: none;
 }
+
+@media screen and (max-width: 500px) {
+  .actions-container {
+    width: 70%;
+    height: 10%;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 1200px) {
+  .actions-container {
+    width: 80%;
+    height: 30%;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
