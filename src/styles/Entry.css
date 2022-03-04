@@ -6,3 +6,21 @@
   font-size: xx-large;
   border-radius: 15px;
 }
+
+@media screen and (min-width: 330px) and (max-width: 500px) {
+  .entry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 6em;
+    width: 9em;
+    align-items: center;
+    background-color: rgba(168, 184, 191, 0.8);
+    font-size: xx-large;
+    border-radius: 15px;
+  }
+
+  .entry-details {
+    margin: 0;
+  }
+}
