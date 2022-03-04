@@ -24,12 +24,10 @@
 
 @media screen and (min-width: 330px) and (max-width: 500px) {
   .detail-nav-bar {
-    margin: 0;
     height: 50%;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    margin-left: 0;
   }
 }

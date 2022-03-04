@@ -38,12 +38,26 @@
     color: aliceblue;
     font-size: xxx-large;
     font-weight: bold;
-    /* height: 55%;
-    width: 70%; */
     margin: 0;
   }
 
   .log-form-title {
     margin: 0;
+  }
+
+  .helped-buttons {
+    display: flex;
+    width: 3.8em;
+    justify-content: space-between;
+  }
+
+  .helped-button {
+    font-size: xx-large;
+    width: 45%;
+  }
+
+  .add-to-log-button {
+    font-size: xx-large;
+    margin: 0.6em;
   }
 }
