@@ -13,12 +13,13 @@ describe('Lets Chill chill log form user flow', () => {
       }
      })
     cy.visit('http://localhost:3000')
-      .get('.feelings-form-buttons').trigger('mouseover')
+    cy.viewport(1000, 1000)
+      .get('.feelings-form-buttons').click(100, 125)
       .get('.action-card').should('have.length', 7)
       .get('.action-card').contains('Change The Scenery')
-      .get('.actions-container').click(150, 150)
+      .get('.actions-container').click(200, 150)
       .get('.log-form-title').contains('Did this help?')
-      .get('.helped-buttons').click(5, 5)
+      .get('.helped-buttons').click(10, 10)
       .get('.add-to-log-button').click({force: true})
       .url().should('include', '/3/11/action_detail')
   });
