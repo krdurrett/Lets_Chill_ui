@@ -38,8 +38,10 @@ class ChillLogContainer extends Component {
       return <ErrorModal message={this.state.error}/>
     } else if (this.state.isLoading) {
       return <Loading />
+    } else if (this.state.log.length === 0) {
+      return <h2 className='no-actions'>No actions logged...go try one out!</h2>
     } else {
-      return <section className='chill-log-container'>
+       return <section className='chill-log-container'>
                 {this.state.log}
               </section>
     }
