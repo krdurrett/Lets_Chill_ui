@@ -46,13 +46,17 @@ Let's Chill is a Mod 3 solo-project at the Turing School of Software and Design 
 
 ## Directions and Features <a name="directions"></a>
 
-Scroll through the main page to view all books in the database. Each books's cover, title and author are visible. 
+On page load, see a list of feelings. Click on a feeling, and see a list of actions you can take based on feeling. 
 
-![main_page_view](https://media.giphy.com/media/7Q9UX06Z6FbB40wdEP/giphy.gif)
+![landing_page_view]()
 
-Click on the 'Learn More' button next to a book cover that interests you to view a book's details. On this page a description of the book's plot is presented. The user is also given the ability to add to or remove a book from their favorites as well as the option to buy the book on Amazon. They can view all of their favorited books by clicking the "Your favorites" button at the top right of the page. Click the book club logo at the top left of the page to return to the main page.
+Once you choose the action, click on it to see details about the action. You can also click on the reference to take you to the website with more information about the action.
 
-![favorite-unfavorite-book](https://media.giphy.com/media/m2txGQ1Ikbi4EJ9k5L/giphy.gif)
+![action-details-view]()
+
+User has the ability to log the feeling, corresponding action, and whether or not it helped along with the date. Then, you can click on your Chill Log link to view what you have logged.
+
+![chill-log-view]()
 
 ## Code Architecture <a name="codeArchitecture"></a>
 
@@ -77,7 +81,6 @@ The React architecture is based on five class components (App.js, ActionDetails.
 - Express
 - JavaScript
 - Node.js
-- Node Fetch
 - Heroku
 - Postman
 - NPM
@@ -94,7 +97,10 @@ Example of a successful test:
 
 ## Project Challanges <a name="projectChallanges"></a>
 
--  
+- Creating a fully functional niche-scope app from concept to production in 5 days
+- Responsive design, making application is accessible and easy to use on any size device
+- Learning PropTypes to type check the data being passed through components
+
 
 ## Project Wins <a name="projectWins"></a>
 
@@ -109,7 +115,10 @@ Example of a successful test:
 
 ## Future Iterations <a name="futureIterations"></a>
 
-- 
+- Allow user to delete log entries
+- Build a functional database on the backend to allow for more than one user
+- Allow user to add actions that help them
+- Allow user to delete actions that do not help them
 
 ## Authors
 
