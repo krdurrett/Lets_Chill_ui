@@ -90,7 +90,7 @@ Cypress was used for E2E and integration testing. To test the application: run `
 
 Example of a successful test:
 
-![lc-test-gif]()
+![lc-test-gif](https://media.giphy.com/media/lQxD3KWUsyjBmmUCgb/giphy.gif)
 
 ## Project Challanges <a name="projectChallanges"></a>
 
