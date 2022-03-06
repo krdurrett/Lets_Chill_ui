@@ -116,7 +116,7 @@ Example of a successful test:
 ## Future Iterations <a name="futureIterations"></a>
 
 - Allow user to delete log entries
-- Build a functional database on the backend to allow for more than one user
+- Build a functional database on the backend to allow for more than one user, and for users log entries to persist
 - Allow user to add actions that help them
 - Allow user to delete actions that do not help them
 
