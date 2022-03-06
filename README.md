@@ -48,15 +48,15 @@ Let's Chill is a Mod 3 solo-project at the Turing School of Software and Design 
 
 On page load, see a list of feelings. Click on a feeling, and see a list of actions you can take based on feeling. 
 
-![landing_page_view]()
+![landing_page_view](https://media.giphy.com/media/nhkpHvRK8D4mEdsBLR/giphy.gif)
 
 Once you choose the action, click on it to see details about the action. You can also click on the reference to take you to the website with more information about the action.
 
-![action-details-view]()
+![action-details-view](https://media.giphy.com/media/DsPbZTuRbcb94y6h9l/giphy.gif)
 
 User has the ability to log the feeling, corresponding action, and whether or not it helped along with the date. Then, you can click on your Chill Log link to view what you have logged.
 
-![chill-log-view]()
+![chill-log-view](https://media.giphy.com/media/wEW2jozD9gB6GDbVPw/giphy.gif)
 
 ## Code Architecture <a name="codeArchitecture"></a>
 
