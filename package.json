@@ -14,9 +14,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "my-server -p 3030",
+    "start": "my-server -p 3000",
     "build": "react-scripts build",
-    "test": "start-server-and-test start http://localhost:3030 cy:run",
+    "test": "start-server-and-test start http://localhost:3000 cy:run",
     "eject": "react-scripts eject",
     "cypress": "./node_modules/.bin/cypress open",
     "cy:run": "cypress run"
