@@ -50,8 +50,6 @@ On page load, see a list of feelings. Click on a feeling, and see a list of acti
 
 ![landing_page_view](https://media.giphy.com/media/nhkpHvRK8D4mEdsBLR/giphy.gif)
 
-![view](https://media.giphy.com/media/F2GTr24pG7z9ZLtLvF/giphy.gif)
-
 Once you choose the action, click on it to see details about the action. You can also click on the reference to take you to the website with more information about the action.
 
 ![action-details-view](https://media.giphy.com/media/DsPbZTuRbcb94y6h9l/giphy.gif)
